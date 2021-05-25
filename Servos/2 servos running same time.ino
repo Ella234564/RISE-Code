@@ -26,7 +26,7 @@ void loop(){                                   //Loop runs over and over again s
    
      servo1.write(servmax);                    //Move servo to maximum angle
      servo2.write(servmax);
-      delay(1000);
+      delay(10000);
     lcd.setCursor (0,0); 
      lcd.print("angle: 180");
                             
@@ -34,7 +34,7 @@ void loop(){                                   //Loop runs over and over again s
       
       servo1.write(servmin);                   //move servo to minimum angle 
      servo2.write(servmin); 
-    delay (1000);
+    delay (10000);
       lcd.print("angle 0");
       lcd.clear();
     }
