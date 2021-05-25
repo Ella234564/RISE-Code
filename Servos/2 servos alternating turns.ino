@@ -25,18 +25,18 @@ lcd.begin(16,2); //Start the LCD
 void loop(){                                   //Loop runs over and over again so program continues indefinitely
    
      servo1.write(servmax);                    //Move servo to maximum angle
-     delay(100);
+     delay(1000);
     servo2.write(servmax);
-      delay(1000);
+      delay(10000);
     lcd.setCursor (0,0); 
      lcd.print("angle: 180");
                             
       lcd.clear();
       
       servo1.write(servmin);                   //move servo to minimum angle 
-     delay(100);
+     delay(1000);
     servo2.write(servmin); 
-    delay (1000);
+    delay (10000);
       lcd.print("angle 0");
       lcd.clear();
     }
